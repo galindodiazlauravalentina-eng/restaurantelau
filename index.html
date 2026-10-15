@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor & Tradición | Restaurante Gourmet</title>
+    <!-- Enlace a los estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-utensils"></i> Sabor & Tradición
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" title="Cambiar Modo Oscuro/Claro">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Inicio (Hero & Carrusel) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Una experiencia culinaria inolvidable</h1>
+            <p>Descubre sabores auténticos preparados con ingredientes frescos de la más alta calidad y un toque de pasión artesanal.</p>
+            <a href="#productos" class="btn-primary">Ver Menú</a>
+        </div>
+        <!-- Carrusel de imágenes dinámico -->
+        <div class="carousel-container">
+            <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80')"></div>
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80')"></div>
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80')"></div>
+            <button class="carousel-btn prev" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-btn next" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Sección Quiénes Somos -->
+    <section id="quienes-somos" class="section">
+        <div class="container about-grid">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80" alt="Chef cocinando en restaurante">
+            </div>
+            <div class="about-text">
+                <h2>Quiénes Somos</h2>
+                <p>En <strong>Sabor & Tradición</strong> fusionamos las recetas tradicionales de la abuela con técnicas culinarias contemporáneas. Nuestro chef ejecutivo selecciona cada día los ingredientes más frescos del mercado local para garantizar una explosión de sabor en cada plato.</p>
+                <div class="features-list">
+                    <div class="feature-item"><i class="fa-solid fa-check"></i> Ingredientes 100% Frescos y Locales</div>
+                    <div class="feature-item"><i class="fa-solid fa-check"></i> Ambiente Cálido y Familiar</div>
+                    <div class="feature-item"><i class="fa-solid fa-check"></i> Cava de Vinos Seleccionada</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                    <h3>Eventos & Celebraciones</h3>
+                    <p>Organizamos tus cenas de empresa, bodas, aniversarios y eventos privados con menús personalizados.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-motorcycle"></i>
+                    <h3>Servicio a Domicilio (Delivery)</h3>
+                    <p>Disfruta de nuestros platos gourmet favoritos directamente en la comodidad de tu hogar.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h3>Reservas de Mesas VIP</h3>
+                    <p>Asegura la mejor ubicación en nuestra terraza o salón principal para esa ocasión especial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Productos (Menú de Platos) -->
+    <section id="productos" class="section">
+        <div class="container">
+            <h2 class="section-title">Platos Destacados del Menú</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Corte de Carne Asada">
+                    <div class="product-info">
+                        <h3>Corte Prime a la Leña</h3>
+                        <p class="description">Jugoso corte de carne madurada acompañado de papas rústicas y vegetales asados.</p>
+                        <p class="price">$28.99</p>
+                        <button class="btn-secondary">Pedir Plato</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80" alt="Pasta Artesanal">
+                    <div class="product-info">
+                        <h3>Pasta Fresca al Tartufo</h3>
+                        <p class="description">Pasta casera con salsa cremosa de trufa negra, champiñones silvestres y queso parmesano.</p>
+                        <p class="price">$22.50</p>
+                        <button class="btn-secondary">Pedir Plato</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Pizza Gourmet">
+                    <div class="product-info">
+                        <h3>Pizza Rústica de Autor</h3>
+                        <p class="description">Masa madre fermentada 48 horas, albahaca fresca, tomates cherry confitados y burrata.</p>
+                        <p class="price">$18.00</p>
+                        <button class="btn-secondary">Pedir Plato</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Portafolio (Galería de Platos) -->
+    <section id="portafolio" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Nuestra Galería Culinaria</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Plato 1">
+                    <div class="portfolio-overlay"><span>Alta Cocina</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="Plato 2">
+                    <div class="portfolio-overlay"><span>Ambiente Acogedor</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=600&q=80" alt="Plato 3">
+                    <div class="portfolio-overlay"><span>Ensaladas Frescas</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2 class="section-title">Reserva tu Mesa / Contacto</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>¿Listo para visitarnos?</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Paseo Gastronómico #88, Ciudad Central</p>
+                    <p><i class="fa-solid fa-phone"></i> +34 913 889 221</p>
+                    <p><i class="fa-solid fa-envelope"></i> reservas@saborytradicion.com</p>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" placeholder="Tu nombre">
+                        <small class="error-msg"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" placeholder="tucorreo@email.com">
+                        <small class="error-msg"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Detalles de la Reserva / Mensaje</label>
+                        <textarea id="message" rows="4" placeholder="Indica fecha, hora y número de personas..."></textarea>
+                        <small class="error-msg"></small>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Reserva</button>
+                    <div id="formSuccess" class="success-msg">¡Reserva enviada con éxito! Nos comunicaremos para confirmarla.</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Sabor & Tradición. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-tripadvisor"></i></a>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
